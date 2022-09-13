@@ -2,19 +2,20 @@
 # number = int(input())
 
 testCases = 1
-number = 11
+number = 18
 for i in range(testCases):
     five = None
     three = None
 
-    if (number % 5 % 3) == 0:
-        five = (number // 5) + (number % 5 // 3)
+    if (number % 5) == 0:
+        five = number // 5
         
     if (number % 3) == 0:
         three = number // 3
 
     print(five, three)
-    if three != None and five != None:
+
+    if three != None and five != None: 
         if three < five:
             answer = three
         else:
