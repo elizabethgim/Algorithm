@@ -90,3 +90,5 @@ int main(){
     Solve();
     return 0;
 }
+
+// 원본 코드: https://yabmoons.tistory.com/50
