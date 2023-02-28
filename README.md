@@ -1,3 +1,3 @@
 # Algorithm
-Study Algorithms!
+Study Algorithms!  
 Trying to solve baekjoon problems everyday.
