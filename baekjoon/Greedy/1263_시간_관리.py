@@ -7,18 +7,18 @@ for _ in range(N):
 
 work.sort(reverse=True)
 
-start = work[0][0]-work[0][1]
+start = work[0][0]-work[0][1]   # 가장 늦게 일어날 수 있는 시간
 prev = 0
+
 for i in range(N):
     ss = work[i][0]
     tt = work[i][1]
 
-    if prev != ss:
-        if ss-tt < start:
-            start = ss-tt
+    # 끝나는 시간이 start보다 작으면
+    if ss < start:
+        start = ss-tt
     else:
         start -= tt
-    prev = ss
 
 if start < 0:
     start = -1
