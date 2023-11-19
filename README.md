@@ -1,6 +1,5 @@
-# Algorithm
-Study Algorithms!
-Trying to solve baekjoon/programmers problems everyday.
+# 알고리즘 부시기
+매일 백준 혹은 프로그래머스 문제 풀기
 
-Reference
+## Reference
 [tony9402](https://github.com/tony9402/baekjoon)
