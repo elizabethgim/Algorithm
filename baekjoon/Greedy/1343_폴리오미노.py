@@ -1,5 +1,18 @@
 
 line = input()
+
+line = line.replace("XXXX", "AAAA")
+line = line.replace("XX", "BB")
+
+if 'X' in line:
+    print(-1)
+else:
+    print(line)
+
+# 출처: https://s0ng.tistory.com/entry/%EB%B0%B1%EC%A4%80-%EA%B7%B8%EB%A6%AC%EB%94%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8F%B4%EB%A6%AC%EC%98%A4%EB%AF%B8%EB%85%B8-1343%EB%B2%88-%ED%8C%8C%EC%9D%B4%EC%8D%AC-python
+# 파이썬 사기야..
+
+'''
 N = len(line)
 tmp = ['' for _ in range(N+1)]
 aa = 4
@@ -7,13 +20,25 @@ bb = 2
 
 cnt = 0
 answer = ""
-for i in range(1, N+1):
-    if line[i-1] == "X":
+for i in range(N):
+    if line[i] == "X":
         cnt += 1
+
+    if line[i] == ".":
+        answer += "."
+        if cnt % 2 != 0:
+            break
+        else:
+            cnt = 0
 
     if cnt % 4 == 0:
         tmp[i] = "AAAA"
+        cnt = 0
+        answer += "AAAA"
     elif cnt % 2 == 0:
         tmp[i] = "BB"
+        answer += "BB"
 
 print(tmp)
+print(answer)
+'''
